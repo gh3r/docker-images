@@ -28,7 +28,7 @@ python2.7 setup.py install
 # install pip
 easy_install-2.7 -U pip
 # upgrade pip and setuptools
-pip install -U setuptools pip virtualenv
+pip install -U setuptools pip
 
 # Do a cleanup
 cd /
