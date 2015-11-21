@@ -1,9 +1,8 @@
 # CentOS with python 2.7.6
 
-Currently using CentOS 6.5.
+Currently using CentOS latest.
 
 Installation adds all esentials for python env.
-Also added `tree` and `man`.
 
 Installed python components:
 
