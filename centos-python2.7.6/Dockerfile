@@ -7,7 +7,7 @@
 FROM bastianb/centos6.5
 
 # File Author / Maintainer
-MAINTAINER Marcin Godlewski gher13@gmail.com
+MAINTAINER Marcin Godlewski <gher13@gmail.com>
 
 # Get setup File
 COPY ./install-python.sh /tmp/install-python.sh
