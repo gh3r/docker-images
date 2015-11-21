@@ -1,10 +1,10 @@
 ############################################################
 # Dockerfile to build python environment on CentOS
-# Build on bastianb/centos6.5 image
+# Build on latest official centos build
 ############################################################
 
 # Pull base image from dockerhub
-FROM bastianb/centos6.5
+FROM centos:lastest
 
 # File Author / Maintainer
 MAINTAINER Marcin Godlewski <gher13@gmail.com>
@@ -36,7 +36,9 @@ RUN \
 # Do a cleanup
 RUN \
 	cd /tmp/ && \
-	rm -rf Python-2.7.6 setuptools-1.4.2
+	rm -rf Python-2.7.6 setuptools-1.4.2 && \
+	yum remove wget tar && \
+	yum clean all
 
 # Set environment variable.
 ENV HOME /code
