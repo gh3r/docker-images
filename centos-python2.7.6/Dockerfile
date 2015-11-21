@@ -4,7 +4,7 @@
 ############################################################
 
 # Pull base image from dockerhub
-FROM centos:lastest
+FROM centos:latest
 
 # File Author / Maintainer
 MAINTAINER Marcin Godlewski <gher13@gmail.com>
